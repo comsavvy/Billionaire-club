@@ -7,7 +7,7 @@ This is a program for allowing those that are within the age group of 20 and abo
 
 We need their name.
 
-We need their gender.
+We need their gender (We don't care is either they put (m/male) or (f/female).
 
 Also how much do they have?
 

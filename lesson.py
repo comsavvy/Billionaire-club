@@ -26,9 +26,9 @@ gender = input('Male(M) or Female(F): ').capitalize()
 money= int(input('How much do you have in your account? '))
 
 # Conditional Statement   
-if gender == 'M':
+if gender == 'M' or gender== 'Male':
     male()
-elif gender == 'F':
+elif gender == 'F' or gender == 'Female':
     female()
 else:
     print('Invalid gender')

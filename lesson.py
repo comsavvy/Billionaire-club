@@ -19,17 +19,20 @@ def female():
         print(f'Mrs {name}, please go and hustle.')
 
 # Question
-print('\t \tBILLIONAIRE CLUB')
-name= input('Name: ').capitalize()
-age= int(input('Please Enter your Age: '))
-gender = input('Male(M) or Female(F): ').capitalize()
-money= int(input('How much do you have in your account? '))
 
-# Conditional Statement   
-if gender == 'M' or gender== 'Male':
-    male()
-elif gender == 'F' or gender == 'Female':
-    female()
-else:
-    print('Invalid gender')
-    
+print('\t \tBILLIONAIRE CLUB')
+try:
+    name= input('Name: ').capitalize()
+    age= int(input('Please Enter your Age: '))
+    money= int(input('How much do you have in your account? '))
+    gender = input('Male(M) or Female(F): ').capitalize()
+
+    # Conditional Statement   
+    if gender == 'M' or gender== 'Male':
+        male()
+    elif gender == 'F' or gender == 'Female':
+        female()
+    else:
+        print('Invalid gender')
+except ValueError:
+    print('Check the input!')

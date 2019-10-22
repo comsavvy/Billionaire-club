@@ -1,6 +1,6 @@
 def am(age, money, output_name):
 
-    if (age >= 20 and money >= 500000) or (age<= 20 and money >= 2000000):
+    if ((age >= 20 and money >= 500000) or (age<= 20 and money >= 2000000)) is True:
 
         return True
 

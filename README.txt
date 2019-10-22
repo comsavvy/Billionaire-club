@@ -1,6 +1,6 @@
                                         					ABOUT THIS PROGRAM
 
-This is a program for allowing those that are within the age group of 20 and above (Both Boys and Girls) or even if the person age doesn't reach 20 yet but he/she has 2 million naira in his/her account is allow to enter the BILLIONAIRE club else, prompt a message that "Sorry [name], you are not allow to enter ".
+This is a program for allowing those that are within the age group of 20 and above (Both Boys and Girls) or even if the person age doesn't reach 20 yet but he/she has 2 million naira in his/her account
  
 							REQUIREMENT
 

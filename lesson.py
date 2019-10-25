@@ -13,11 +13,11 @@ def male():
 
     if am(age, money, output_name) is True:
 
-        print(f'Mr {output_name}you are allow to enter😎')
+        print(f'Mr {output_name}\b, you are allow to enter😎')
 
     else:
 
-        print(f'Mr {output_name}please go and hustle.')
+        print(f'Mr {output_name}\b, please go and hustle.')
 
 
 
@@ -26,11 +26,11 @@ def female():
 
     if am(age, money, output_name) is True:
 
-        print(f'Mrs {output_name}you are allow to enter😎')
+        print(f'Mrs {output_name}\b, you are allow to enter😎')
 
     else:
 
-        print(f'Mrs {output_name}please go and hustle.')
+        print(f'Mrs {output_name}\b, please go and hustle.')
 
 
 

@@ -1,3 +1,5 @@
+from concurrent import futures
+
 def am(age, money, output_name):
     if ((age >= 20 and money >= 500000) or (age <= 20 and money >= 2000000)):
         return True
@@ -42,4 +44,5 @@ def main():
 
 
 if __name__ == '__main__':
-	main()
+    with futures.ThreadPoolExecutor(max_workers= 2) as executor:
+        executor.submit(main)

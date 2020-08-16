@@ -6,19 +6,19 @@ def am(age, money, output_name):
     else:
         return False
 
-
-def male(age, money, output_name):
-    if am(age, money, output_name):
-        print(f'Mr {output_name}\b, you are allow to enter😎')
+def gender(gen, age, money, output_name):
+    if gen.startswith("M"):
+        if am(age, money, output_name):
+            print(f'Mr {output_name}\b, you are allow to enter😎')
+        else:
+            print(f'Mr {output_name}\b, please go and hustle.')
+    elif gen.startswith("F"):
+        if am(age, money, output_name) is True:
+       		print(f'Mrs {output_name}\b, you are allow to enter😎')
+        else:
+            print(f'Mrs {output_name}\b, please go and hustle.')
     else:
-        print(f'Mr {output_name}\b, please go and hustle.')
-
-
-def female(age, money, output_name):
-    if am(age, money, output_name) is True:
-        print(f'Mrs {output_name}\b, you are allow to enter😎')
-    else:
-        print(f'Mrs {output_name}\b, please go and hustle.')
+        print("Invalid gender")
 
 
 def main():
@@ -31,14 +31,9 @@ def main():
 	        output_name += cpl + ' '
 	    age= int(input('Please Enter your Age: '))
 	    money= int(input('How much do you have in your account? '))
-	    gender = input('Male(M) or Female(F): ').capitalize()
+	    gend = input('Male(M) or Female(F): ').capitalize()
 	# Conditional Statement
-	    if gender.startswith('M'):
-	        male(age, money, output_name)
-	    elif gender.startswith('F'):
-	        female(age, money, output_name)
-	    else:
-	        print('Invalid gender')
+	    gender(gend, age, money, output_name)
 	except ValueError:
 	    print('Check the input!')
 
